@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simuladores Interactivos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="bg-grid"></div>
+
+    <header>
+        <div class="header-inner">
+            <h1 class="main-title">SIMULADORES<br><span>INTERACTIVOS</span></h1>
+            <p class="subtitle">Plataforma de cálculo matemático y físico</p>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- ===== EJERCICIO 1: LEY DE ENFRIAMIENTO ===== -->
+        <section class="card" id="card-calor">
+            <div class="card-header">
+                <span class="badge">EJ. 01</span>
+                <h2>Simulador de Transferencia de Calor</h2>
+                <p class="card-desc">Ley de Enfriamiento de Newton — Calcula la temperatura final de un objeto en el tiempo <em>t</em></p>
+            </div>
+
+            <div class="formula-box">
+                <span class="formula-label">Fórmula</span>
+                <code>T = Ts + (T₀ − Ts) × e<sup>−k·t</sup></code>
+            </div>
+
+            <form id="form-calor" onsubmit="return false;">
+                <div class="fields-grid">
+                    <div class="field-group">
+                        <label for="T0">Temperatura inicial (T₀) en °C</label>
+                        <input type="number" id="T0" placeholder="Ej: 120" step="any">
+                    </div>
+                    <div class="field-group">
+                        <label for="Ts">Temperatura del entorno (Ts) en °C</label>
+                        <input type="number" id="Ts" placeholder="Ej: 38" step="any">
+                    </div>
+                    <div class="field-group">
+                        <label for="k">Constante de enfriamiento (k)</label>
+                        <input type="number" id="k" placeholder="Ej: 0.45" step="any">
+                    </div>
+                    <div class="field-group">
+                        <label for="t">Tiempo transcurrido (t) en horas</label>
+                        <input type="number" id="t" placeholder="Ej: 3" step="any">
+                    </div>
+                </div>
+
+                <button type="button" class="btn-calc" onclick="calcularCalor()">
+                    <span class="btn-icon">⚡</span> CALCULAR TEMPERATURA
+                </button>
+            </form>
+
+            <div class="result-box" id="resultado-calor">
+                <div class="result-placeholder">👆 Ingresa los datos y presiona calcular</div>
+            </div>
+        </section>
+
+
+        <!-- ===== EJERCICIO 2: COMBINACIONES ===== -->
+        <section class="card" id="card-comb">
+            <div class="card-header">
+                <span class="badge">EJ. 02</span>
+                <h2>Calculador de Combinaciones</h2>
+                <p class="card-desc">Caso Sorteo — Selección simultánea en dos grupos independientes</p>
+            </div>
+
+            <div class="formula-box">
+                <span class="formula-label">Fórmula</span>
+                <code>C(n, r) = n! / (r! × (n − r)!)</code>
+            </div>
+
+            <form id="form-comb" onsubmit="return false;">
+                <div class="groups-container">
+                    <div class="group-card">
+                        <div class="group-title">
+                            <span class="group-badge">Grupo 1</span>
+                        </div>
+                        <div class="field-group">
+                            <label for="n1">Total elementos (n1)</label>
+                            <input type="number" id="n1" value="59" min="1">
+                        </div>
+                        <div class="field-group">
+                            <label for="r1">Elementos a elegir (r1)</label>
+                            <input type="number" id="r1" value="5" min="0">
+                        </div>
+                    </div>
+
+                    <div class="multiply-symbol">×</div>
+
+                    <div class="group-card">
+                        <div class="group-title">
+                            <span class="group-badge">Grupo 2</span>
+                        </div>
+                        <div class="field-group">
+                            <label for="n2">Total elementos (n2)</label>
+                            <input type="number" id="n2" value="35" min="1">
+                        </div>
+                        <div class="field-group">
+                            <label for="r2">Elementos a elegir (r2)</label>
+                            <input type="number" id="r2" value="1" min="0">
+                        </div>
+                    </div>
+                </div>
+
+                <button type="button" class="btn-calc btn-green" onclick="calcularCombinaciones()">
+                    <span class="btn-icon">🎲</span> CALCULAR COMBINACIONES
+                </button>
+            </form>
+
+            <div class="result-box" id="resultado-comb">
+                <div class="result-placeholder">👆 Ajusta los valores y presiona calcular</div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Simuladores Interactivos · 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
