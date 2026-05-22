@@ -3,7 +3,6 @@
 Plataforma web interactiva con dos simuladores matemáticos desarrollada como desafío técnico para la materia **INF-111 (Programación Fundamental)** en la **UMSA**.
 
 ## 🔗 Live Demo
-> _Reemplaza este enlace con tu URL de GitHub Pages después de publicar_  
 > `https://silpanchito.github.io/simuladoressinteractivos/`
 
 ## 📋 Descripción
