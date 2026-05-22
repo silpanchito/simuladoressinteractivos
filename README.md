@@ -1,10 +1,10 @@
-# Simuladores Interactivos — INF-111
+# Simuladores Interactivos 
 
 Plataforma web interactiva con dos simuladores matemáticos desarrollada como desafío técnico para la materia **INF-111 (Programación Fundamental)** en la **UMSA**.
 
 ## 🔗 Live Demo
 > _Reemplaza este enlace con tu URL de GitHub Pages después de publicar_  
-> `https://TU-USUARIO.github.io/simuladores-interactivos/`
+> `https://silpanchito.github.io/simuladoressinteractivos/`
 
 ## 📋 Descripción
 
@@ -61,5 +61,4 @@ simuladores-interactivos/
 4. GitHub generará automáticamente la URL pública
 
 ## 👩‍💻 Autora
-
-Estudiante de INF-111 · Universidad Mayor de San Andrés · 2026
+ Universidad Mayor de San Andrés · 2026
