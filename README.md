@@ -1,11 +1,9 @@
-# Simuladores Interactivos 
-
-Plataforma web interactiva con dos simuladores matemáticos desarrollada como desafío técnico para la materia **INF-111 (Programación Fundamental)** en la **UMSA**.
+[# Simuladores Interactivos 
 
 ## 🔗 Live Demo
 > `https://silpanchito.github.io/simuladoressinteractivos/`
 
-## 📋 Descripción
+## 📋 Descripción](https://silpanchito.github.io/simuladoressinteractivos/)
 
 La plataforma contiene dos ejercicios prácticos:
 
@@ -52,12 +50,3 @@ simuladores-interactivos/
 - **CSS3** con variables CSS, Grid, Flexbox y animaciones
 - **JavaScript** vanilla con `document.getElementById()` y `Math.exp()`
 
-## 🚀 Cómo publicar en GitHub Pages
-
-1. Crea un repositorio público en GitHub con el nombre `simuladores-interactivos`
-2. Sube los tres archivos: `index.html`, `styles.css`, `script.js`
-3. Ve a **Settings → Pages → Source → Deploy from branch → main**
-4. GitHub generará automáticamente la URL pública
-
-## 👩‍💻 Autora
- Universidad Mayor de San Andrés · 2026
